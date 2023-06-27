@@ -72,7 +72,7 @@ Tecnologías utilizadas:
 
           POST http://localhost:3000/auth/register
 
-            body:
+        body:
 
             ```js
                 {
@@ -89,7 +89,7 @@ Tecnologías utilizadas:
 
           POST http://localhost:3000/auth/login
 
-            body:
+        body:
 
             ```js
                 {
@@ -120,7 +120,7 @@ Tecnologías utilizadas:
 
           PUT http://localhost:3000/admin/update-user/:id
 
-            body:
+        body:
 
             ```js
                 {
@@ -142,7 +142,7 @@ Tecnologías utilizadas:
 
           DELETE http://localhost:3000/api/dentist/delete-appointment
 
-            body:
+        body:
 
                 ```js
                     {
