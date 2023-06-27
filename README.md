@@ -70,9 +70,9 @@ Tecnologías utilizadas:
 
   - Registrar usuario
 
-            POST http://localhost:3000/auth/register
+        POST http://localhost:3000/auth/register
 
-        body:
+    body:
 
             ```js
                 {
@@ -87,16 +87,16 @@ Tecnologías utilizadas:
 
   - Login
 
-            POST http://localhost:3000/auth/login
+        POST http://localhost:3000/auth/login
 
-        body:
+    body:
 
-            ```js
-                {
-                    "email": "steven@garzon.com",
-                    "password": "12345678"
-                }
-            ```
+        ```js
+            {
+                "email": "steven@garzon.com",
+                "password": "12345678"
+            }
+        ```
 
 - ADMIN
 
@@ -106,27 +106,27 @@ Tecnologías utilizadas:
 
   - Obtener usuario por id
 
-          GET http://localhost:3000/admin/user/:id
+        GET http://localhost:3000/admin/user/:id
 
   - Obtener todos los pacientes
 
-          GET http://localhost:3000/admin/all-patients?page=1
+        GET http://localhost:3000/admin/all-patients?page=1
 
   - Obtener todos los dentistas
 
-          GET http://localhost:3000/admin/all-dentists?page=1
+        GET http://localhost:3000/admin/all-dentists?page=1
 
   - Actualizar usuario por id
 
-            PUT http://localhost:3000/admin/update-user/:id
+        PUT http://localhost:3000/admin/update-user/:id
 
         body:
 
-            ```js
-                {
-                    "email": "steven@serna.com"
-                }
-            ```
+        ```js
+            {
+                "email": "steven@serna.com"
+            }
+        ```
 
 - DENTIST
 
@@ -140,25 +140,25 @@ Tecnologías utilizadas:
 
   - Obtener borrar alguna cita existente por id de la cita
 
-            DELETE http://localhost:3000/api/dentist/delete-appointment
+        DELETE http://localhost:3000/api/dentist/delete-appointment
 
-        body:
+    body:
 
-                ```js
-                    {
-                        "id": 3
-                    }
-                ```
+        ```js
+            {
+                "id": 3
+            }
+        ```
 
 - PATIENT
 
   - Obtener mi perfil
 
-          GET http://localhost:3000/api/users/profile
+        GET http://localhost:3000/api/users/profile
 
   - Actualizar mi perfil
 
-             PUT http://localhost:3000/api/users/update-profile
+        PUT http://localhost:3000/api/users/update-profile
 
     body:
 
@@ -170,7 +170,7 @@ Tecnologías utilizadas:
 
   - Crear una cita escogiendo el dentista
 
-            POST http://localhost:3000/api/users/new-appointment
+    POST http://localhost:3000/api/users/new-appointment
 
 body:
 
