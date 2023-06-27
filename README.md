@@ -68,7 +68,7 @@ Tecnologías utilizadas:
 
 - AUTH
 
-  - Registrar alumno
+  - Registrar usuario
 
           POST http://localhost:3000/auth/register
 
