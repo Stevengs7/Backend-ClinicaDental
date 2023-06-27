@@ -190,9 +190,9 @@ Tecnologías utilizadas:
         }
     ```
 
-    - Obtener todas mis citas
+- Obtener todas mis citas
 
-      GET http://localhost:3000/api/users/my-appointments?page=1
+       GET http://localhost:3000/api/users/my-appointments?page=1
 
  </details>
 
