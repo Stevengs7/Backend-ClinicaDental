@@ -12,6 +12,7 @@ module.exports = async (req, res) => {
 
   try {
     if (page <= maxPages) {
+      
       const patient = await Patient.findOne({
         where: { id_user: userId },
       });

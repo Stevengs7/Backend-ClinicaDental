@@ -21,4 +21,12 @@ router.get(
   dentistController.getAppointments
 );
 
+// Delete appointment
+router.delete(
+  "/delete-appointment",
+  verifyToken,
+  isDentist,
+  dentistController.deleteAppointment
+);
+
 module.exports = router;

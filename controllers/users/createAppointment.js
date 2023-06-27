@@ -8,9 +8,9 @@ module.exports = async (req, res) => {
     const patient = await Patient.findOne({
       where: { id_user: userId },
     });
-    
+
     const newAppointment = { ...req.body, id_patient: patient.id };
-    const appointment = await Appointment.create(newAppointment);
+    await Appointment.create(newAppointment);
     res.status(201).json({
       message: successMsg.appointment.CREATED,
     });
