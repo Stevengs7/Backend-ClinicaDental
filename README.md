@@ -74,16 +74,16 @@ Tecnologías utilizadas:
 
     body:
 
-            ``` js
-                {
-                    "user_name": "Steven",
-                    "user_last_name": "Garzon",
-                    "birthday": "1996-08-02",
-                    "email": "steven@garzon.com",
-                    "password": "12345678",
-                    "phone_number": "+34 678763802"
-                }
-            ```
+    ```js
+        {
+        "user_name": "Steven",
+        "user_last_name": "Garzon",
+        "birthday": "1996-08-02",
+        "email": "steven@garzon.com",
+        "password": "12345678",
+        "phone_number": "+34 678763802"
+        }
+    ```
 
   - Login
 
@@ -91,12 +91,12 @@ Tecnologías utilizadas:
 
     body:
 
-        ``` js
-            {
-                "email": "steven@garzon.com",
-                "password": "12345678"
-            }
-        ```
+    ```js
+        {
+            "email": "steven@garzon.com",
+            "password": "12345678"
+        }
+    ```
 
 - ADMIN
 
@@ -120,13 +120,13 @@ Tecnologías utilizadas:
 
         PUT http://localhost:3000/admin/update-user/:id
 
-        body:
+    body:
 
-        ``` js
-            {
-                "email": "steven@serna.com"
-            }
-        ```
+    ```js
+        {
+            "email": "steven@serna.com"
+        }
+    ```
 
 - DENTIST
 
@@ -144,11 +144,11 @@ Tecnologías utilizadas:
 
     body:
 
-        ``` js
-            {
-                "id": 3
-            }
-        ```
+    ```js
+        {
+            "id": 3
+        }
+    ```
 
 - PATIENT
 
@@ -172,9 +172,9 @@ Tecnologías utilizadas:
 
         POST http://localhost:3000/api/users/new-appointment
 
-body:
+    body:
 
-    ``` js
+    ```js
         {
             // 1. john smith (Orthodontics)
             // 2. jane doe (Periodontics)
