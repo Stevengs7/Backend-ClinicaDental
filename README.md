@@ -74,7 +74,7 @@ Tecnologías utilizadas:
 
     body:
 
-            ```js
+            ``` js
                 {
                     "user_name": "Steven",
                     "user_last_name": "Garzon",
@@ -91,7 +91,7 @@ Tecnologías utilizadas:
 
     body:
 
-        ```js
+        ``` js
             {
                 "email": "steven@garzon.com",
                 "password": "12345678"
@@ -102,7 +102,7 @@ Tecnologías utilizadas:
 
   - Obtener todos los usuarios
 
-          GET http://localhost:3000/admin/all-users?page=1
+        GET http://localhost:3000/admin/all-users?page=1
 
   - Obtener usuario por id
 
@@ -122,7 +122,7 @@ Tecnologías utilizadas:
 
         body:
 
-        ```js
+        ``` js
             {
                 "email": "steven@serna.com"
             }
@@ -132,11 +132,11 @@ Tecnologías utilizadas:
 
   - Obtener todos los pacientes
 
-          GET http://localhost:3000/api/dentist/all-patients?page=1
+        GET http://localhost:3000/api/dentist/all-patients?page=1
 
   - Obtener la lista de mis citas
 
-          GET http://localhost:3000/api/dentist/my-appointments?page=1
+        GET http://localhost:3000/api/dentist/my-appointments?page=1
 
   - Obtener borrar alguna cita existente por id de la cita
 
@@ -144,7 +144,7 @@ Tecnologías utilizadas:
 
     body:
 
-        ```js
+        ``` js
             {
                 "id": 3
             }
@@ -170,11 +170,11 @@ Tecnologías utilizadas:
 
   - Crear una cita escogiendo el dentista
 
-    POST http://localhost:3000/api/users/new-appointment
+        POST http://localhost:3000/api/users/new-appointment
 
 body:
 
-    ```js
+    ``` js
         {
             // 1. john smith (Orthodontics)
             // 2. jane doe (Periodontics)
@@ -191,7 +191,6 @@ body:
     ```
 
 - Obtener todas mis citas
-
   GET http://localhost:3000/api/users/my-appointments?page=1
 
  </details>
