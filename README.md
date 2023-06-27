@@ -70,7 +70,7 @@ Tecnologías utilizadas:
 
   - Registrar usuario
 
-          POST http://localhost:3000/auth/register
+            POST http://localhost:3000/auth/register
 
         body:
 
@@ -87,7 +87,7 @@ Tecnologías utilizadas:
 
   - Login
 
-          POST http://localhost:3000/auth/login
+            POST http://localhost:3000/auth/login
 
         body:
 
@@ -118,7 +118,7 @@ Tecnologías utilizadas:
 
   - Actualizar usuario por id
 
-          PUT http://localhost:3000/admin/update-user/:id
+            PUT http://localhost:3000/admin/update-user/:id
 
         body:
 
@@ -140,7 +140,7 @@ Tecnologías utilizadas:
 
   - Obtener borrar alguna cita existente por id de la cita
 
-          DELETE http://localhost:3000/api/dentist/delete-appointment
+            DELETE http://localhost:3000/api/dentist/delete-appointment
 
         body:
 
@@ -158,7 +158,7 @@ Tecnologías utilizadas:
 
   - Actualizar mi perfil
 
-          PUT http://localhost:3000/api/users/update-profile
+             PUT http://localhost:3000/api/users/update-profile
 
     body:
 
@@ -170,7 +170,7 @@ Tecnologías utilizadas:
 
   - Crear una cita escogiendo el dentista
 
-        POST http://localhost:3000/api/users/new-appointment
+            POST http://localhost:3000/api/users/new-appointment
 
 body:
 
