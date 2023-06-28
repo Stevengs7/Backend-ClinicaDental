@@ -26,7 +26,7 @@ Aplicación API de ejemplo para la gestión de una base de datos de una clinica 
 ## Deploy 🚀
 
 <div align="center">
-    <a href="http://localhost:3000/"><strong>Url a producción </strong></a>🚀🚀🚀
+    <a href="https://backend-clinicadental-production.up.railway.app"><strong>Url a producción </strong></a>🚀🚀🚀
 </div>
 
 ## Stack
