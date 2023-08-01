@@ -1,4 +1,4 @@
-const { User, Dentist, Role, Patient, Appointment } = require("../../models");
+const { User, Dentist, Patient, Appointment } = require("../../models");
 
 module.exports = async (req, res) => {
   let { page } = req.query;
@@ -12,7 +12,6 @@ module.exports = async (req, res) => {
 
   try {
     if (page <= maxPages) {
-        
       const dentist = await Dentist.findOne({
         where: { id_user: userId },
       });
@@ -23,6 +22,31 @@ module.exports = async (req, res) => {
         attributes: {
           exclude: ["createdAt", "updatedAt"],
         },
+        include: [
+          {
+            model: Patient,
+            as: "patient",
+            attributes: {
+              exclude: ["id", "createdAt", "updatedAt"],
+            },
+            include: [
+              {
+                model: User,
+                as: "user",
+                attributes: {
+                  exclude: [
+                    "id",
+                    "password",
+                    "id_role",
+                    "birthday",
+                    "createdAt",
+                    "updatedAt",
+                  ],
+                },
+              },
+            ],
+          },
+        ],
       });
       res.status(200).json({
         info: {

@@ -21,6 +21,14 @@ router.get(
   dentistController.getAppointments
 );
 
+// My profile
+router.get(
+  "/my-profile",
+  verifyToken,
+  isDentist,
+  dentistController.getMyProfile
+);
+
 // Delete appointment
 router.delete(
   "/delete-appointment",

@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
       id_user: user.id,
     };
 
-    const patient = await Patient.create(newPatient);
+    await Patient.create(newPatient);
 
     res.status(201).json({
       message: "User has been created successfully",

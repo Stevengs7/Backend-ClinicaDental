@@ -13,8 +13,16 @@ router.get("/all-patients", verifyToken, isAdmin, adminController.getPatients);
 //Get Dentists
 router.get("/all-dentists", verifyToken, isAdmin, adminController.getDentists);
 
+//Delete user
+router.get("/delete-user", verifyToken, isAdmin, adminController.deleteUser);
+
 //Update User
-router.put("/update-user/:id", verifyToken, isAdmin, adminController.updateUser);
+router.put(
+  "/update-user/:id",
+  verifyToken,
+  isAdmin,
+  adminController.updateUser
+);
 
 //Get user by id
 router.get("/user/:id", verifyToken, isAdmin, adminController.findByPk);

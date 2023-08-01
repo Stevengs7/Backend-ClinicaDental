@@ -1,12 +1,16 @@
+const bcrypt = require("bcrypt");
 const { successMsg, errorMsg } = require("../../_utils/messages");
 const { User } = require("../../models");
 
 module.exports = async (req, res) => {
   const { userId } = req;
-  const { userRole } = req;
   try {
-    const updates = { ...req.body };
-
+    const updates = {
+      ...req.body,
+      password: req.body.password
+        ? bcrypt.hashSync(req.body.password, 10)
+        : undefined,
+    };
     await User.update(updates, { where: { id: userId } });
 
     res.status(202).json({

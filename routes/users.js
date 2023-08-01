@@ -34,4 +34,33 @@ router.get(
   userController.getAppointments
 );
 
+// Update Appointment
+
+router.put(
+  "/update-appointment/:id",
+  verifyToken,
+  isPatient,
+  userController.updateAppointment
+);
+
+// Get Dentist
+router.get("/all-dentists", verifyToken, isPatient, userController.getDentist);
+
+// Delete my appointment
+
+router.delete(
+  "/appointment-delete",
+  verifyToken,
+  isPatient,
+  userController.deleteAppointments
+);
+
+// get one appointment by id
+router.post(
+  "/one-appointment",
+  verifyToken,
+  isPatient,
+  userController.findAppointment
+);
+
 module.exports = router;

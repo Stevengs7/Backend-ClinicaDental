@@ -9,7 +9,7 @@ const {
 module.exports = async (req, res) => {
   let { page } = req.query;
   page = +page;
-  const LIMIT = 2;
+  const LIMIT = 10;
   const totalUsers = await User.count();
   const maxPages = Math.ceil(totalUsers / LIMIT);
   if (!page || page < 0) page = 1;

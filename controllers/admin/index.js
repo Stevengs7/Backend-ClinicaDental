@@ -12,5 +12,10 @@ adminController.getDentists = require("./getDentist");
 
 //Update User
 adminController.updateUser = require("./updateUser");
+adminController.updateUser = require("./updateUser");
+
+// Delete User
+
+adminController.deleteUser = require("./deleteUser");
 
 module.exports = adminController;

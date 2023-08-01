@@ -4,7 +4,14 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 require("dotenv").config();
+const cors = require("cors");
 const app = express();
+const corsOptions = {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -15,6 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(cors(corsOptions));
 
 const router = require("./router");
 app.use(router);
@@ -33,6 +41,7 @@ app.use(function (err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render("error");
+  a;
 });
 
 module.exports = app;

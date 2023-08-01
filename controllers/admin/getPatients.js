@@ -3,7 +3,7 @@ const { User, Patient } = require("../../models");
 module.exports = async (req, res) => {
   let { page } = req.query;
   page = +page;
-  const LIMIT = 2;
+  const LIMIT = 10;
   const totalPatients = await Patient.count();
   const maxPages = Math.ceil(totalPatients / LIMIT);
   if (!page || page < 0) page = 1;

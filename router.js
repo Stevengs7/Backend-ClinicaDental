@@ -14,7 +14,7 @@ router.use("/", indexRouter);
 router.use("/auth", authRouter);
 
 //Admin
-router.use("/admin", adminRouter);
+router.use("/api/admin", adminRouter);
 
 // Patient
 router.use("/api/users", usersRouter);
